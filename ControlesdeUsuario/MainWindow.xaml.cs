@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ControlesdeUsuario
+namespace ControlesDeUsuario
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -25,6 +26,18 @@ namespace ControlesdeUsuario
             InitializeComponent();
         }
 
-       
+        private void CbFigura_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            grdParametrosFigura.Children.Clear();
+            switch (cbFigura.SelectedIndex)
+            {
+                case 0: // Circulo
+                    grdParametrosFigura.Children.
+                        Add(new ParametrosCirculo());
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

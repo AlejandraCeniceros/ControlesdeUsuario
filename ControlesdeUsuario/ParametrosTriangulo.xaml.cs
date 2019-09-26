@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ControlesDeUsuario
+namespace ControlesdeUsuario
 {
     /// <summary>
-    /// Lógica de interacción para ParametrosCirculo.xaml
+    /// Lógica de interacción para ParametrosTriangulo.xaml
     /// </summary>
-    public partial class ParametrosCirculo : UserControl
+    public partial class ParametrosTriangulo : UserControl
     {
-        public ParametrosCirculo()
+        public ParametrosTriangulo()
         {
             InitializeComponent();
         }
